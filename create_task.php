@@ -32,8 +32,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content= 
      "width=device-width, initial-scale=1.0"> 
     <title>Add Task</title> 
+    <link rel="stylesheet" href="styles.css">
 </head> 
 <body> 
+    <div class="container">
+        <div class="glass-container">
     <h2>Add task</h2> 
     <form method="post" action=""> 
 
@@ -56,5 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <input type="submit" value="Add Task"> 
     </form> 
     <h3><a href="view_task.php" type="submit" >View All Task</a></h3>
+    </div>
+    </div>
 </body> 
 </html>

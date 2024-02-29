@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 body{
-    background-image: url('/assets/background.jpg');
+    background-image: url('background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; 
@@ -32,4 +32,8 @@ a{
     border-radius: 20px;
     backdrop-filter: blur(11.6px);
     -webkit-backdrop-filter: blur(11.6px);
+}
+
+.submit{
+    color: #000;
 }
