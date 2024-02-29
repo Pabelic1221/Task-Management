@@ -6,10 +6,6 @@
     <title>Task Management System</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
-<style> 
-    </style> 
-</head> 
 <body>
     <div class="container">
         <div class="glass-container">
