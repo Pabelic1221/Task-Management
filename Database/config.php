@@ -2,7 +2,7 @@
 $host = "localhost";
 $username = "root";
 $password = "";
-$database = "task";
+$database = "task_management";
 
 $conn = new mysqli('localhost', 'root', '', 'task_management'); 
   
