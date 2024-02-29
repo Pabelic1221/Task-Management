@@ -37,31 +37,35 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
      "width=device-width, initial-scale=1.0"> 
     <title>Add Patient</title> 
 </head> 
-<body> 
-    <h2>Update task</h2> 
-    <form method="post" action=""> 
+<body>
+    <div class="container">
+        <div class="glass-container"> 
+            <h2>Update task</h2> 
+            <form method="post" action=""> 
 
-        <label for="id">Task ID::</label> 
-        <input type="number" name="id" required> 
+                <label for="id">Task ID::</label> 
+                <input type="number" name="id" required> 
 
-        <label for="title">title:</label> 
-        <input type="text" name="title" required> 
+                <label for="title">title:</label> 
+                <input type="text" name="title" required> 
   
-        <label for="description">description:</label> 
-        <input type="text" name="description" required> 
+                <label for="description">description:</label> 
+                <input type="text" name="description" required> 
   
-        <label for="priority">priority:</label> 
-        <select name="priority"> 
-            <option value="Low">Low</option> 
-            <option value="Medium">Medium</option> 
-            <option value="High">High</option> 
-        </select> 
+                <label for="priority">priority:</label> 
+                <select name="priority"> 
+                    <option value="Low">Low</option> 
+                    <option value="Medium">Medium</option> 
+                    <option value="High">High</option> 
+                </select> 
 
-        <label for="due_date">Due Date:</label><br>
-        <input type="date" id="due_date" name="due_date" required><br>
+                <label for="due_date">Due Date:</label><br>
+                <input type="date" id="due_date" name="due_date" required><br>
   
-        <input type="submit" value="update Task"> 
-    </form> 
-    <h3><a href="view_task.php" type="submit" >View All Task</a><h3>
+                <input type="submit" value="update Task"> 
+            </form> 
+            <h3><a href="view_task.php" type="submit" >View All Task</a><h3>
+        </div>  
+    </div>
 </body> 
 </html>
