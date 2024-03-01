@@ -40,20 +40,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <h2>Add task</h2> 
     <form method="post" action=""> 
 
-        <label for="title">title:</label> 
-        <input type="text" name="title" required> 
+        <label for="title">title:</label>
+        <input type="text" name="title" required><br>
   
         <label for="description">description:</label> 
-        <input type="text" name="description" required> 
+        <input type="text" name="description" required><br>
   
         <label for="priority">priority:</label> 
         <select name="priority"> 
             <option value="Low">Low</option> 
             <option value="Medium">Medium</option> 
             <option value="High">High</option> 
-        </select> 
+        </select><br>
 
-        <label for="due_date">Due Date:</label><br>
+        <label for="due_date">Due Date:</label>
         <input type="date" id="due_date" name="due_date" required><br>
   
         <input type="submit" value="Add Task"> 
