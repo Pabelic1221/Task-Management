@@ -37,29 +37,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body> 
     <div class="container">
         <div class="glass-container">
-    <h2>Add task</h2> 
-    <form method="post" action=""> 
+            <h2>Add task</h2> 
+            <form method="post" action=""> 
 
-        <label for="title">title:</label>
-        <input type="text" name="title" required><br>
+                <label for="title">title:</label>
+                <input type="text" name="title" required><br>
   
-        <label for="description">description:</label> 
-        <input type="text" name="description" required><br>
+                <label for="description">description:</label> <br>
+                <textarea name="description" rows="4" cols="50" required></textarea><br>
   
-        <label for="priority">priority:</label> 
-        <select name="priority"> 
-            <option value="Low">Low</option> 
-            <option value="Medium">Medium</option> 
-            <option value="High">High</option> 
-        </select><br>
+                <label for="priority">priority:</label> 
+                <select name="priority"> 
+                    <option value="Low">Low</option> 
+                    <option value="Medium">Medium</option> 
+                    <option value="High">High</option> 
+                </select><br>
 
-        <label for="due_date">Due Date:</label>
-        <input type="date" id="due_date" name="due_date" required><br>
+                <label for="due_date">Due Date:</label>
+                <input type="date" id="due_date" name="due_date" required><br><br>
   
-        <input type="submit" value="Add Task"> 
-    </form> 
-    <h3><a href="view_task.php" type="submit" >View All Task</a></h3>
-    </div>
+                <input type="submit" value="Add Task"> 
+            </form> 
+            <h3><a href="view_task.php" type="view-task-btn" >View All Task</a></h3>
+        </div>
     </div>
 </body> 
 </html>

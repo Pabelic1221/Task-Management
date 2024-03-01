@@ -4,6 +4,7 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>View Task</title> 
+    <link rel="stylesheet" href="styles.css">
 </head> 
 <body> 
     <div class="container">
@@ -32,12 +33,13 @@
                     echo "<tr>
                     <td>{$row['id']}</td>
                     <td>{$row['title']}</td>
-                    <td>{$row['description']}</td>
+                    <td class='description-cell'>{$row['description']}</td>
                     <td>{$row['priority']}</td>
                     <td>{$row['due_date']}</td>
                     <td>
                         <form method='POST' action='delete_task.php'>
                             <button class='delete-button' type='submit' name='delete_id' value='{$row['id']}' aria-label='Delete task with id {$row['id']}'>Delete</button>
+                        </form>
                     </td>
                     </tr>";
                 }

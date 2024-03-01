@@ -19,13 +19,14 @@ a{
     display: flex
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
 }
-.glass-container{
+
+.glass-container {
     display: block;
-    max-width:  72vw;
+    max-width: 72vw;
     margin-top: 10vh;
     margin-bottom: 30px;
     background: rgba(0, 0, 0, 0.56);
@@ -35,6 +36,40 @@ a{
     -webkit-backdrop-filter: blur(11.6px);
 }
 
-.submit{
-    color: #000;
+.glass-container label {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.glass-container input[type="text"],
+.glass-container select,
+.glass-container input[type="date"] {
+    width: calc(100% - 130px);
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.view-task-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.view-task-btn:hover {
+    background-color: #45a049;
+}
+.description-cell {
+    max-width: 400px; /* Adjust as needed */
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+table td {
+    padding: 20px; /* Adjust as needed */
 }
